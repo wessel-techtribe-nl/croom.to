@@ -89,7 +89,7 @@ install_dependencies() {
         python3 \
         python3-pip \
         python3-venv \
-        chromium-browser \
+        chromium \
         pulseaudio \
         v4l-utils \
         libcamera-apps \
@@ -163,7 +163,7 @@ install_croom() {
         # If package not on PyPI, install from source
         log "Installing from source..."
         "$INSTALL_DIR/venv/bin/pip" install /usr/local/src/croom 2>/dev/null || \
-        "$INSTALL_DIR/venv/bin/pip" install git+https://github.com/your-org/croom.git
+        "$INSTALL_DIR/venv/bin/pip" install git+https://github.com/amirhmoradi/croom.to.git
     }
 
     # Install browser automation
